@@ -4,9 +4,9 @@ class CloudUploadModel extends CI_Model {
  
 function amazons3Upload( $image_name , $fileTempName, $upload_folder ){
  
-    $awsAccessKey = 'AKIAJOXC3IOJXJ72Y4WA'; //AWS account access key
-    $awsSecretKey = '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'; //AWS account secret key
-    $bucket_name  = 'shivabucketaug';  //Bucket name 
+    $awsAccessKey = 'AKIAVDSQRBUEJGDB3FOA'; //AWS account access key
+    $awsSecretKey = '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'; //AWS account secret key
+    $bucket_name  = 'mywebapp-15nov';  //Bucket name 
     $s3           = new S3($awsAccessKey, $awsSecretKey);
     $s3->putBucket($bucket_name);
         
