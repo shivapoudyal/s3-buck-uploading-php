@@ -15,7 +15,7 @@ class CloudUpload extends CI_Controller {
             $image_name = $_FILES['image']['name'];
  
 	    $upload_folder   = 'uploadimages';  //folder name
-            $bucket_name     =  'imageuploadingshiva'; //Bucket name
+            $bucket_name     =  'mywebapp-15nov'; //Bucket name
             $awsstatus       =  $this->cloudUploadModel->amazons3Upload($image_name, $fileTempName, $upload_folder); //call model function
             $awss3filepath   =  "http://".$bucket_name.'.'."s3.amazonaws.com/".$upload_folder.'/'.$image_name;
             
